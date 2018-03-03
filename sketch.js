@@ -1,4 +1,4 @@
-var eventDate = new Date("2018-03-13T21:00:00");
+var eventDate = new Date("2018-03-03T14:15:00").getTime();
 var currentDate;
 var PEventdate, PCurrentDate;
 
@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-	currentDate = new Date();
+	currentDate = Date.now();
 	PEventdate.html(eventDate);
 	PCurrentDate.html(currentDate);
 }
